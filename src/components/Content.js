@@ -152,11 +152,11 @@ class Content extends React.Component {
             <motion.div initial={{ opacity: 0, x: -1000 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 1}}><Data text={text_area.first_content_area.text} src={AiFace}
                        h1_text={text_area.first_content_area.h1_text}/>
             </motion.div>
-            <motion.div initial={{ opacity: 0, x: 1000 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 1}}><Data text={text_area.second_text_area.text} src={AiBlock}
+            <motion.div initial={{ opacity: 0, x: -1000 }} whileInView={{ opacity: 1.5, x: 0 }} transition={{duration: 1}}><Data text={text_area.second_text_area.text} src={AiBlock}
                        h1_text={text_area.second_text_area.h1_text}/></motion.div>
             <motion.div initial={{ opacity: 0, x: -1000 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 1}}><Data text={text_area.third_content_area.text} src={AiCar}
                        h1_text={text_area.third_content_area.h1_text}/></motion.div>
-            <motion.div initial={{ opacity: 0, x: 1000 }} whileInView={{ opacity: 1, x: 0 }} transition={{duration: 1}}><Data text={text_area.four_container_area.text} src={AiMatrix}
+            <motion.div initial={{ opacity: 0, x: -1000 }} whileInView={{ opacity: 1.5, x: 0 }} transition={{duration: 1}}><Data text={text_area.four_container_area.text} src={AiMatrix}
                        h1_text={text_area.four_container_area.h1_text}/></motion.div>
             <Footer/>
         </div>
