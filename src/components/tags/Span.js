@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from "framer-motion";
 class Span extends React.Component{
     constructor(props) {
         super(props);
@@ -7,7 +8,7 @@ class Span extends React.Component{
         }
     }
     render() {
-        return <span>{this.props.text}</span>
+        return <motion.span>{this.props.text}</motion.span>
     }
 }
 export default Span

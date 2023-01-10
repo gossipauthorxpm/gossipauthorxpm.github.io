@@ -11,8 +11,9 @@ class Header extends React.Component {
         return <div id={'header'} className={'header'}>
             <motion.header
                 className={'header_element'}
-                whileHover={{scale: 1.05, width: '60%'}}
+                initial={{textShadow: '-2px 0px 0px rgba(32, 60, 20, 1)'}}
                 animate={{opacity: 1, width: '60%'}}
+                whileHover={{scale: 1.05, width: '60%', textShadow: '-2px 0px 0px rgba(255, 0, 150, 1)'}}
                 transition={{duration: 1}}
             >
             <Span text={"GOSSIPAUTHORXPM"}/>
