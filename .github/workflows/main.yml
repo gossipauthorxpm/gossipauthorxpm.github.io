@@ -4,10 +4,10 @@ on:
   push:
     branches:
       # We can define multiple branches as well      
-      - main
+      - run_build
   pull_request:
     branches:
-      - main
+      - run_build
       
 jobs:
   build:
