@@ -9,7 +9,7 @@ class Data extends React.Component {
                 <H1 text={this.props.h1_text}/>
                 <div>{this.props.text}</div>
             </div>
-            <Image src={this.props.src} height={600} width={600} animate={true} animateDuration={0.5}
+            <Image src={this.props.src} styleImage={this.props.styleImage} height={600} width={600} animate={true} animateDuration={0.5}
                    scaleValue={1.10}/>
         </div>
     }
