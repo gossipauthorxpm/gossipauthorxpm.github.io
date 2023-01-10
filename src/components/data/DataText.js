@@ -1,4 +1,4 @@
-import Link from "../tags/Link";
+import Link from "../struct/Link";
 
  class DataText {
 

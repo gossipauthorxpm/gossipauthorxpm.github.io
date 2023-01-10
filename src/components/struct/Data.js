@@ -1,7 +1,6 @@
 import React from "react";
 import H1 from "./H1";
 import Image from "./Image";
-
 class Data extends React.Component {
     render() {
         return <div className={'container'}>

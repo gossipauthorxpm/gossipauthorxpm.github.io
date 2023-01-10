@@ -1,6 +1,6 @@
 import React from "react";
-import Span from "./tags/Span";
-import Image from "./tags/Image";
+import Span from "./struct/Span";
+import Image from "./struct/Image";
 import { motion } from "framer-motion"
 import russiaFlag from "../images/Flag_of_Russia.webp"
 import americaFlag from "../images/america_flag.webp"
