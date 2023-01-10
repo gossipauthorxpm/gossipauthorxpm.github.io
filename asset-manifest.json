@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.98af1385.css",
+    "main.js": "/static/js/main.276e737f.js",
+    "static/media/matrix.png": "/static/media/matrix.02dd8c1d66c00f745d21.png",
+    "static/media/infinity_car.png": "/static/media/infinity_car.5117697d44e0433a600f.png",
+    "static/media/face.png": "/static/media/face.461b64b76f94aed999af.png",
+    "static/media/block.png": "/static/media/block.27960653b0432d0c2627.png",
+    "static/media/america_flag.webp": "/static/media/america_flag.57496e82a678d2e62b06.webp",
+    "index.html": "/index.html",
+    "static/media/Flag_of_Russia.webp": "/static/media/Flag_of_Russia.7ab2b77e948a73294043.webp",
+    "main.98af1385.css.map": "/static/css/main.98af1385.css.map",
+    "main.276e737f.js.map": "/static/js/main.276e737f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98af1385.css",
+    "static/js/main.276e737f.js"
+  ]
+}
