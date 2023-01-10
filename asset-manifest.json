@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3f803a7f.css",
-    "main.js": "/static/js/main.843830c7.js",
+    "main.js": "/static/js/main.8c3153bf.js",
     "static/media/matrix.png": "/static/media/matrix.02dd8c1d66c00f745d21.png",
     "static/media/infinity_car.png": "/static/media/infinity_car.5117697d44e0433a600f.png",
     "static/media/face.png": "/static/media/face.461b64b76f94aed999af.png",
@@ -10,10 +10,10 @@
     "index.html": "/index.html",
     "static/media/Flag_of_Russia.webp": "/static/media/Flag_of_Russia.7ab2b77e948a73294043.webp",
     "main.3f803a7f.css.map": "/static/css/main.3f803a7f.css.map",
-    "main.843830c7.js.map": "/static/js/main.843830c7.js.map"
+    "main.8c3153bf.js.map": "/static/js/main.8c3153bf.js.map"
   },
   "entrypoints": [
     "static/css/main.3f803a7f.css",
-    "static/js/main.843830c7.js"
+    "static/js/main.8c3153bf.js"
   ]
 }
