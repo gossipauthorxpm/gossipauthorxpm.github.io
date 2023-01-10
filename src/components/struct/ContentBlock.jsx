@@ -23,12 +23,14 @@ class ContentBlock extends React.Component {
     settings_animate = () => {
         return {
             duration: 1.5,
+            repeat: 0
         }
     }
     render() {
         return <motion.div initial={this.start_animate(this.props.lastElem)}
                            whileInView={this.end_animate()}
                            transition={this.settings_animate()}
+                           viewport={{ once: true }}
         >{this.props.data}</motion.div>
     }
 }

@@ -14,7 +14,15 @@ import Link from "../struct/Link";
      english_content = {
          first_content_area: {
              text:
-                 <p>Want a simple Excel fill script?<br/>
+                 <p>Programming is an art accessible
+                     not every person (every
+                     but it is necessary to go through 7 circles of compiler hell,
+                     to learn about all the secrets and myths of programming).
+                     I can use this skill for your purposes. Basically,
+                     everything you want can be described in one of the programming languages
+                     (or maybe even several), it is important to know: what do you want from the task and the result,
+                     what you want to see is the rest of the technique.<br/><br/>
+                     Want a simple Excel fill script?<br/>
                      No problems. Web scraper? No problem.<br/>
                      A complex system of calculating numbers? No problem.<br/>
                      (Won't go down to beats, don't even ask)<br/>
@@ -80,7 +88,15 @@ import Link from "../struct/Link";
      russia_content = {
          first_content_area: {
              text:
-                 <p>Хотите простой скрип заполнения Excel?<br/>
+                 <p>Программирование – это искусство доступное
+                     далеко не каждому человеку (каждому
+                     но это надо пройти 7 кругов ада компилятора,
+                     чтобы прознать о всех тайнах и мифах программирования).
+                     Я могу использовать этот навык в ваших целях. В принципе,
+                     всё что захотите можно описать на одном из языков программирования
+                     (а может даже и нескольких), важно знать: что вы хотите от задачи и результат,
+                     которые вы хотите видеть – остальное дело техники.<br/><br/>
+                     Хотите простой скрип заполнения Excel?<br/>
                      Нет проблем. Веб-скраппер? Нет проблем.<br/>
                      Сложную систему вычислений чисел? Нет проблем.<br/>
                      (Не буду спускаться до битов, даже не проси)<br/>

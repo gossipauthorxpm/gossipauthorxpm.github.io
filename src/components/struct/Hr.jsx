@@ -16,7 +16,9 @@ class Hr extends React.Component {
                 transition={{
                 duration: 3,
                 type: 'spring'
-           }}/>
+           }}
+                viewport={{ once: true }}
+            />
         );
     }
 }
