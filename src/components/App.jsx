@@ -12,7 +12,6 @@ class App extends React.Component{
   }
   render() {
     return <main>
-
       <Header langChange={this.langChange}/>
       <Content language={this.state.language}/>
     </main>

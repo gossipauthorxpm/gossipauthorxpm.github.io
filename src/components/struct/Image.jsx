@@ -17,8 +17,6 @@ class Image extends React.Component {
                 style={this.props.styleImage}
                 whileHover={{
                     scale: this.props.scaleValue,
-                    
-
                 }}
                 whileTap={{ scale: 0.9 }}
                 transition={{
