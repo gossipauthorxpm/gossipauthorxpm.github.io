@@ -7,6 +7,7 @@ import DataText from "./data/DataText";
 
 import ImageLint from "./data/ImageLint";
 import ContentBlock from "./struct/ContentBlock";
+
 class Content extends React.Component {
     render() {
         let text_area;
@@ -14,9 +15,9 @@ class Content extends React.Component {
         let dataImages = new DataImages();
 
         if (this.props.language === "ru") {
-             text_area = new DataText().getRussiaContent();
+            text_area = new DataText().getRussiaContent();
         } else {
-             text_area = new DataText().getEnglishContent();
+            text_area = new DataText().getEnglishContent();
         }
         return <div className={'main_content'}>
             <ContentBlock data={
@@ -24,7 +25,6 @@ class Content extends React.Component {
                       text={text_area.first_content_area.text}
                       src={dataImages.aiFace}
                       h1_text={text_area.first_content_area.h1_text}
-
                 />}
             />
             <Hr/>
@@ -33,7 +33,6 @@ class Content extends React.Component {
                       text={text_area.second_text_area.text}
                       src={dataImages.aiBlock}
                       h1_text={text_area.second_text_area.h1_text}
-
                 />}
             />
             <Hr/>
@@ -42,7 +41,6 @@ class Content extends React.Component {
                       text={text_area.third_content_area.text}
                       src={dataImages.aiCar}
                       h1_text={text_area.third_content_area.h1_text}
-
                 />
             }/>
             <Hr/>
@@ -51,7 +49,6 @@ class Content extends React.Component {
                       text={text_area.four_container_area.text}
                       src={dataImages.aiMatrix}
                       h1_text={text_area.four_container_area.h1_text}
-
                 />
             }/>
             <Footer/>

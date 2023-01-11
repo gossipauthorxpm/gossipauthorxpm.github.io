@@ -41,6 +41,9 @@ a{
     opacity: 0;
 
 }
+.container .image {
+    margin: 50px;
+}
 .header_element .image{
     cursor: pointer;
 }
@@ -76,8 +79,8 @@ a{
     .container{
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
-        height: 100vh;
+        justify-content: space-between;
+        height: 100%;
     }
     .text_area{
         display: flex;
@@ -85,8 +88,13 @@ a{
         justify-content: center;
         align-items: center;
         width: 100%;
+        font-size: 32px;
     }
     .header_element{
         width: 90%;
+        height: 120px;
+    }
+    span{
+        font-size: 36px;
     }
 }
