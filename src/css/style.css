@@ -41,7 +41,9 @@ a{
     opacity: 0;
 
 }
-
+.header_element .image{
+    cursor: pointer;
+}
 .image{
     border-radius: 15px;
     padding: 7px;
