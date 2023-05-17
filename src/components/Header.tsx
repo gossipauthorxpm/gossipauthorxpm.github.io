@@ -5,6 +5,7 @@ import {AnimatePresence} from "framer-motion";
 import React, {useState} from "react";
 import HeaderContainer from "./HeaderContainer";
 import Toggle from "./Toggle";
+import {RoutesEndpoints} from "../static/RoutesEndpoints";
 
 export default function Header(): React.JSX.Element {
 
@@ -13,8 +14,8 @@ export default function Header(): React.JSX.Element {
     return <>
         <HeaderContainer className={'header-container-element'}>
             <Logo>GOSSIPAUTHORXPM</Logo>
-            <Link href={''} underlineClass={"use-underline"} className={'link text-xl prose'}>Price</Link>
-            <Link href={''} underlineClass={"use-underline"} className={'link text-xl prose'}>Stack</Link>
+            <Link href={RoutesEndpoints.PRICE_PAGE} underlineClass={"use-underline"} className={'link text-xl prose'}>Price</Link>
+            <Link href={RoutesEndpoints.STACK_PAGE} underlineClass={"use-underline"} className={'link text-xl prose'}>Stack</Link>
             <Toggle text={"Switch theme"} callback={switchThemes}/>
         </HeaderContainer>
     </>
