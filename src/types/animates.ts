@@ -1,5 +1,5 @@
 import {ReactNode} from "react";
 
-export type IDepartureProps = {
+export type ISlideProps = {
     children: ReactNode
 }

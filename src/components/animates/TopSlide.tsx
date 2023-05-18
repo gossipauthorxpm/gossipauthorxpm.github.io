@@ -1,12 +1,12 @@
-import React from "react";
 import {motion} from "framer-motion";
+import React from "react";
 import {ISlideProps} from "../../types/animates";
 
-export default function RightSlide(props: ISlideProps): React.JSX.Element {
+export default function TopSlide(props: ISlideProps): React.JSX.Element{
     return <>
         <motion.div
-            initial={{x: 2000}}
-            animate={{x: 0}}
+            initial={{y: -2000}}
+            animate={{y: 0}}
             transition={{duration: 2, type: "spring"}}
             viewport={{once: true}}
         >{props.children}</motion.div>

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99595aa7.css",
+    "main.js": "/static/js/main.a2d031f9.js",
+    "static/media/react-logo.png": "/static/media/react-logo.304c015ecbe65c835789.png",
+    "static/media/gitlab-logo.png": "/static/media/gitlab-logo.defee73ea31084e6a447.png",
+    "static/media/telegram-logo.png": "/static/media/telegram-logo.6d4fb402a1836d62584b.png",
+    "static/media/github-logo.png": "/static/media/github-logo.f11021803f68852df283.png",
+    "static/media/ProgrammingIllustration.png": "/static/media/ProgrammingIllustration.57af0b9ee835b594cf6b.png",
+    "index.html": "/index.html",
+    "main.99595aa7.css.map": "/static/css/main.99595aa7.css.map",
+    "main.a2d031f9.js.map": "/static/js/main.a2d031f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99595aa7.css",
+    "static/js/main.a2d031f9.js"
+  ]
+}

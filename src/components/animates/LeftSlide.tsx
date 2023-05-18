@@ -1,11 +1,11 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {IDepartureProps} from "../../types/animates";
+import {ISlideProps} from "../../types/animates";
 
-export default function LeftSlide(props: IDepartureProps): React.JSX.Element {
+export default function LeftSlide(props: ISlideProps): React.JSX.Element {
     return <>
         <motion.div
-        initial={{x: -600}}
+        initial={{x: -2000}}
         animate={{x: 0}}
         transition={{duration: 2, type: "spring"}}
         viewport={{ once: true }}
