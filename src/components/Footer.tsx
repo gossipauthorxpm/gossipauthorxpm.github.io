@@ -10,6 +10,9 @@ import FooterImage from "./FooterImage";
 import {INTERNET_LINKS} from "../static/internet-links";
 import Link from "./Link";
 import Container from "./Container";
+import {RoutesEndpoints} from "../static/routes-endpoints";
+import SwitchThemeToggle from "./SwitchThemeToggle";
+import Text from "./Text";
 
 
 export default function Footer(): React.JSX.Element {
@@ -17,11 +20,11 @@ export default function Footer(): React.JSX.Element {
     return <>
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <Container className="grid grid-flow-col gap-4">
-                <Link href={"/"} underlineClass={"use-underline"} className="link">About us</Link>
-                <Link href={"/"} underlineClass={"use-underline"} className="link">About us</Link>
-                <Link href={"/"} underlineClass={"use-underline"} className="link">About us</Link>
-                <Link href={"/"} underlineClass={"use-underline"} className="link">About us</Link>
+                <Link href={RoutesEndpoints.ROOT_PAGE} underlineClass={"use-underline"} className="link">About us</Link>
+                <Link href={RoutesEndpoints.STACK_PAGE} underlineClass={"use-underline"} className="link">Stack</Link>
+                <Link href={RoutesEndpoints.PRICE_PAGE} underlineClass={"use-underline"} className="link">Price</Link>
             </Container>
+            <SwitchThemeToggle/>
             <Container>
                 <Container className="grid grid-flow-col gap-4">
                     <FooterImage src={VK} href={INTERNET_LINKS.VK}/>
@@ -32,7 +35,7 @@ export default function Footer(): React.JSX.Element {
                 </Container>
             </Container>
             <Container>
-                <p>Copyright © {getCurrentDate()} - GOSSIPAUTHORXPM Apache MIT 2 License</p>
+                <Text className={'prose text-xl'}>Copyright © {getCurrentDate()} - GOSSIPAUTHORXPM Apache 2.0 License</Text>
             </Container>
         </footer>
     </>

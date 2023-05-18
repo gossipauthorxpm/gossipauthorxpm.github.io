@@ -5,21 +5,20 @@ import HeaderText from "../components/HeaderText";
 import Text from "../components/Text";
 import Image from "../components/Image";
 import ImageComputer from "../images/ProgrammingIllustration.png"
-import {RoutesEndpoints} from "../static/routes-endpoints";
 import {ROOT_PAGE_TEXT_1} from "../static/static-text";
 
 
 export default function RootPage(): React.JSX.Element {
     return <>
-        <Container className={'root-page'}>
-            <HeaderText className={'prose text-3xl self-start'}>Welcome to GOSSIPAUTHORXPM PROJECT</HeaderText>
-            <Container className={''}>
+        <Container className={'flex flex-col'}>
+            <HeaderText className={'prose self-center text-center text-xl sm:text-3xl'}>Welcome to GOSSIPAUTHORXPM PROJECT</HeaderText>
+            <Container className={'flex items-center flex-col xl:flex-row'}>
                 <Image className={'m-10'} src={ImageComputer} alt={'Image'}/>
-                <Text className={'text-2xl self-justify-text'}>{ROOT_PAGE_TEXT_1}</Text>
+                <Text className={'prose m-10 text-justify'}>{ROOT_PAGE_TEXT_1}</Text>
             </Container>
-            <Text className={'text-2xl self-start-text'}>TEST TEXT TEST TEXT</Text>
-            <Text className={'text-2xl self-center-text'}>TEST TEXT TEST TEXT</Text>
-            <Text className={'text-2xl self-left-text'}>TEST TEXT TEST TEXT</Text>
+            <Text className={'text-2xl'}>TEST TEXT TEST TEXT</Text>
+            <Text className={'text-2xl text-center'}>TEST TEXT TEST TEXT</Text>
+            <Text className={'text-2xl text-end'}>TEST TEXT TEST TEXT</Text>
         </Container>
     </>
 }

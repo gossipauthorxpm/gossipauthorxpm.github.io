@@ -7,6 +7,6 @@ export default function Logo(props: ILogoProps): React.JSX.Element {
     return <>
         <Link
             href={RoutesEndpoints.ROOT_PAGE}
-            className={'btn btn-ghost normal-case text-3xl tracking-widest'}>{props.children}</Link>
+            className={'btn text-2xl btn-ghost normal-case tracking-widest xl:text-3xl'}>{props.children}</Link>
     </>
 }

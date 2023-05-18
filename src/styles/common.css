@@ -19,18 +19,3 @@
     align-items: center;
     align-content: center;
 }
-
-.self-left-text {
-    text-align: end;
-}
-
-.self-right-text {
-    text-align: start;
-}
-
-.self-center-text {
-    text-align: center;
-}
-.self-justify-text {
-    text-align: justify;
-}
