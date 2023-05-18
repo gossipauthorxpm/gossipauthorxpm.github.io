@@ -1,3 +1,3 @@
-export type IReduxDarkTheme = {
+export type IDarkThemeSliceState = {
     isDarkTheme: boolean
 }
