@@ -1,5 +1,3 @@
-import Image from "./Image";
-
 import VK from "../../images/vk-logo.png"
 import GITHUB from "../../images/github-logo.png"
 import TELEGRAM from "../../images/telegram-logo.png"
