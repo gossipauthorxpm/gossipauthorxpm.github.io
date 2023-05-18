@@ -1,11 +1,9 @@
 import React from "react";
 import Container from "../components/elements/Container";
 import HeaderText from "../components/elements/HeaderText";
-import LeftSlide from "../components/animates/LeftSlide";
 import ULList from "../components/elements/ULList";
 import Text from "../components/elements/Text";
 import {ROOT_TEST_TEXT} from "../static/static-text";
-import RightSlide from "../components/animates/RightSlide";
 import LeftSlideContainer from "../components/animated-elements/LeftSlideContainer";
 import RightSlideContainer from "../components/animated-elements/RightSlideContainer";
 
