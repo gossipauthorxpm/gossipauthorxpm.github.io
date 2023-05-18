@@ -1,5 +1,5 @@
 export const RoutesEndpoints = {
-    MAIN_PAGE: "/",
+    ROOT_PAGE: "/",
     PRICE_PAGE: "/price-list",
     STACK_PAGE: "/stack-list"
 }

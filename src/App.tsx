@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "./components/Header";
-import {BrowserRouter, HashRouter} from "react-router-dom";
+import "./styles/common.css"
 import RoutesHandler from "./route/RoutesHandler";
 
 function App(): React.JSX.Element {

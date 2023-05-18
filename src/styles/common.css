@@ -1,0 +1,19 @@
+.delimiter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    width: 100%;
+
+}
+.delimiter-element{
+    border-color: #8a8a8a;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
