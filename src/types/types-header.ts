@@ -15,6 +15,7 @@ export type ILinkProps = {
     transition?: ITransitionLink
     whileHover?: IWhileHoverLink
     initial?: IInitialLink
+    textClassName?: string
     underlineClass?: "use-underline"
 }
 export type ITransitionLink = {

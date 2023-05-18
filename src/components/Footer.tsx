@@ -20,9 +20,12 @@ export default function Footer(): React.JSX.Element {
     return <>
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <Container className="grid grid-flow-col gap-4">
-                <Link href={RoutesEndpoints.ROOT_PAGE} underlineClass={"use-underline"} className="link">About us</Link>
-                <Link href={RoutesEndpoints.STACK_PAGE} underlineClass={"use-underline"} className="link">Stack</Link>
-                <Link href={RoutesEndpoints.PRICE_PAGE} underlineClass={"use-underline"} className="link">Price</Link>
+                <Link href={RoutesEndpoints.ROOT_PAGE} underlineClass={"use-underline"}
+                      textClassName={'text-xs'} className="link">About</Link>
+                <Link href={RoutesEndpoints.STACK_PAGE} underlineClass={"use-underline"}
+                      className="link">Stack</Link>
+                <Link href={RoutesEndpoints.PRICE_PAGE} underlineClass={"use-underline"}
+                      className="link">Price</Link>
             </Container>
             <SwitchThemeToggle/>
             <Container>

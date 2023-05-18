@@ -8,6 +8,7 @@ export default function Link(props: ILinkProps): React.JSX.Element {
     return <Container className={props.underlineClass}>
         <LinkRouter className={props.className} to={props.href}>
             <motion.span
+                className={props.textClassName}
                 initial={props.initial}
                 transition={props.transition}
                 whileHover={props.whileHover}>
