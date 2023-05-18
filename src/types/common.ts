@@ -16,3 +16,8 @@ export type ITextProps = {
     children: ReactNode
     className: string
 }
+export type IImageProps = {
+    src? : any
+    alt?: string
+    className: string
+}

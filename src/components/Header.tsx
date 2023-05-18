@@ -6,11 +6,10 @@ import HeaderContainer from "./HeaderContainer";
 import Toggle from "./Toggle";
 import {RoutesEndpoints} from "../static/RoutesEndpoints";
 import Container from "./Container";
+import {setLightTheme, setDarkTheme} from "../redux/slices";
+import {store} from "../redux/store";
 
 export default function Header(): React.JSX.Element {
-
-    const [darkTheme, setDarkTheme] = useState(true)
-
     return <>
         <HeaderContainer className={'header-container-element'}>
             <Logo>GOSSIPAUTHORXPM</Logo>
@@ -26,16 +25,15 @@ export default function Header(): React.JSX.Element {
 
     function switchThemes() {
         let html: HTMLElement = document.documentElement
-        if (darkTheme) {
+        if (store.getState().theme.isDarkTheme) {
             // light
             html.setAttribute("data-theme", "corporate")
-            setDarkTheme(false)
+            store.dispatch(setLightTheme())
         } else {
             // dark
             html.setAttribute("data-theme", "business")
-            setDarkTheme(true)
+            store.dispatch(setDarkTheme())
         }
-
     }
 
 }
