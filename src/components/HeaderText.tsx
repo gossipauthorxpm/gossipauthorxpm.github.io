@@ -1,8 +1,8 @@
 import React from "react";
-import {IHeaderTextProps} from "../types/common";
+import {IHTextProps} from "../types/common";
 import Container from "./Container";
 
-export default function HeaderText(props: IHeaderTextProps): React.JSX.Element {
+export default function HeaderText(props: IHTextProps): React.JSX.Element {
     return <Container className={props.className}>
         {props.children}
     </Container>

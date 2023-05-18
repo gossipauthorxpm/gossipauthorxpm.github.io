@@ -1,6 +1,6 @@
 import {Route, Routes, useLocation} from "react-router-dom";
 import PricePage from "../pages/PricePage";
-import {RoutesEndpoints} from "../static/RoutesEndpoints";
+import {RoutesEndpoints} from "../static/routes-endpoints";
 import React from "react";
 import RootPage from "../pages/RootPage";
 

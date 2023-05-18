@@ -2,13 +2,13 @@ import {ReactNode} from "react";
 
 export type IContainerProps = {
     children: ReactNode
-    className: string
+    className?: string
 }
 export type IToggleProps = {
     callback: any
     text: string
 }
-export type IHeaderTextProps = {
+export type IHTextProps = {
     children: ReactNode
     className: string
 }
@@ -17,7 +17,11 @@ export type ITextProps = {
     className: string
 }
 export type IImageProps = {
-    src? : any
+    src?: any
     alt?: string
     className: string
+}
+export type IFooterImageProps = {
+    src: any
+    href: string
 }

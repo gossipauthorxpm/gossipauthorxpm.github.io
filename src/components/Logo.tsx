@@ -1,6 +1,6 @@
 import Link from "./Link";
 import {ILogoProps} from "../types/types-header";
-import {RoutesEndpoints} from "../static/RoutesEndpoints";
+import {RoutesEndpoints} from "../static/routes-endpoints";
 import React from "react";
 
 export default function Logo(props: ILogoProps): React.JSX.Element {

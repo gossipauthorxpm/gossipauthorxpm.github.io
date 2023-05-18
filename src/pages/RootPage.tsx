@@ -5,8 +5,8 @@ import HeaderText from "../components/HeaderText";
 import Text from "../components/Text";
 import Image from "../components/Image";
 import ImageComputer from "../images/ProgrammingIllustration.png"
-import {RoutesEndpoints} from "../static/RoutesEndpoints";
-import {ROOT_PAGE_TEXT_1} from "../static/StaticText";
+import {RoutesEndpoints} from "../static/routes-endpoints";
+import {ROOT_PAGE_TEXT_1} from "../static/static-text";
 
 
 export default function RootPage(): React.JSX.Element {

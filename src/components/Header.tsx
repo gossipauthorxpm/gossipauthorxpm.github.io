@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import React, {useState} from "react";
 import HeaderContainer from "./HeaderContainer";
 import Toggle from "./Toggle";
-import {RoutesEndpoints} from "../static/RoutesEndpoints";
+import {RoutesEndpoints} from "../static/routes-endpoints";
 import Container from "./Container";
 import {setLightTheme, setDarkTheme} from "../redux/slices";
 import {store} from "../redux/store";
