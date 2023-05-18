@@ -7,7 +7,6 @@ export type IContainerProps = {
 }
 export type IHTextProps = {
     children: ReactNode
-    className: string
     style?: {}
 }
 export type ITextProps = {
@@ -18,6 +17,7 @@ export type IImageProps = {
     src?: any
     alt?: string
     className: string
+    useNegative: boolean
 }
 export type IFooterImageProps = {
     src: any

@@ -1,9 +1,9 @@
 import React from "react";
-import {IHTextProps} from "../types/common";
+import {IHTextProps} from "../../types/common";
 import Container from "./Container";
 
 export default function HeaderText(props: IHTextProps): React.JSX.Element {
-    return <Container style={props.style} className={props.className}>
+    return <Container style={props.style} className={'prose self-center text-center text-xl sm:text-3xl'}>
         {props.children}
     </Container>
 }

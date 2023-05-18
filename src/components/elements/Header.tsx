@@ -1,10 +1,10 @@
-import "../styles/header.css"
+import "../../styles/header.css"
 import Link from "./Link";
 import Logo from "./Logo";
 import React from "react";
 import HeaderContainer from "./HeaderContainer";
 import SwitchThemeToggle from "./SwitchThemeToggle";
-import {RoutesEndpoints} from "../static/routes-endpoints";
+import {RoutesEndpoints} from "../../static/routes-endpoints";
 import Container from "./Container";
 
 

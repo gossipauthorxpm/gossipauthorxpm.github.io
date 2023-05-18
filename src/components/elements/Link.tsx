@@ -1,5 +1,5 @@
 import React from "react";
-import {ILinkProps} from "../types/types-header";
+import {ILinkProps} from "../../types/types-header";
 import {motion} from "framer-motion";
 import {Link as LinkRouter} from "react-router-dom";
 import Container from "./Container";

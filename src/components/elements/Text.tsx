@@ -1,5 +1,5 @@
 import React from "react";
-import {ITextProps} from "../types/common";
+import {ITextProps} from "../../types/common";
 import {motion} from "framer-motion";
 
 

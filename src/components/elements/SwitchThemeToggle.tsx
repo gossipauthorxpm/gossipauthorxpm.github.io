@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {store} from "../redux/store";
-import {setDarkTheme, setLightTheme} from "../redux/slices";
+import {store} from "../../redux/store";
+import {setDarkTheme, setLightTheme} from "../../redux/slices";
 
 export default function SwitchThemeToggle(): React.JSX.Element {
 

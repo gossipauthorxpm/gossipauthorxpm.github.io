@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from "./components/Header";
+import Header from "./components/elements/Header";
 import "./styles/common.css"
 import RoutesHandler from "./route/RoutesHandler";
-import Footer from "./components/Footer";
+import Footer from "./components/elements/Footer";
 
 function App(): React.JSX.Element {
     return <>
