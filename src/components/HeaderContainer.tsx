@@ -4,10 +4,9 @@ import Container from "./Container";
 
 export default function HeaderContainer(props: IHeaderContainerProps): React.JSX.Element {
     return <>
-        <Container className={props.className}>
-            <Container className="navbar bg-base-100 justify-evenly">
-                {props.children}
-            </Container>
+        <Container className="navbar bg-base-100 justify-evenly header-container-element">
+            {props.children}
         </Container>
     </>
+
 }

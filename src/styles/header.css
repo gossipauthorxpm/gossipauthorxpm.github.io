@@ -2,8 +2,6 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.15em;
-
-    /*display: inline-block;*/
     padding: 15px 20px;
     position: relative;
 }
@@ -23,4 +21,12 @@
 .use-underline a:hover:after {
     width: 100%;
     left: 0;
+}
+
+@media screen and (max-width: 800px){
+    .header-container-element {
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+    }
 }
