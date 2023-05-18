@@ -6,7 +6,7 @@ import Text from "../components/elements/Text";
 import Image from "../components/elements/Image";
 import ImageComputer from "../images/ProgrammingIllustration.png"
 import {ROOT_PAGE_TEXT_1, ROOT_TEST_TEXT} from "../static/static-text";
-import LeftDeparture from "../components/animates/LeftDeparture";
+import LeftSlide from "../components/animates/LeftSlide";
 
 
 export default function RootPage(): React.JSX.Element {
@@ -16,9 +16,9 @@ export default function RootPage(): React.JSX.Element {
                 Welcome to GOSSIPAUTHORXPM PROJECT
             </HeaderText>
             <Container className={'flex items-center flex-col xl:flex-row'}>
-                <LeftDeparture>
+                <LeftSlide>
                     <Image useNegative={true} className={'m-10'} src={ImageComputer} alt={'Image'}/>
-                </LeftDeparture>
+                </LeftSlide>
                 <Text className={'prose m-10 text-justify'}>{ROOT_PAGE_TEXT_1}</Text>
             </Container>
             <Container className={'flex items-center flex-col justify-center'}>

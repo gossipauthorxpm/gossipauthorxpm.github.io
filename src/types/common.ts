@@ -1,4 +1,4 @@
-import {ReactNode} from "react";
+import {PropsWithChildren, ReactNode} from "react";
 
 export type IContainerProps = {
     children: ReactNode
@@ -22,4 +22,7 @@ export type IImageProps = {
 export type IFooterImageProps = {
     src: any
     href: string
+}
+export type IULListProps = {
+    children: ReactNode
 }

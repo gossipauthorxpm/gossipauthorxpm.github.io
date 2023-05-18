@@ -1,5 +1,6 @@
 import {ReactNode} from "react";
 
-export type IDepartureProps = {
+export type ISlideContainerProps = {
     children: ReactNode
+    className: string
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {ICenterDepartureProps} from "../../types/animates";
+import {IDepartureProps} from "../../types/animates";
 
-export default function LeftDeparture(props: ICenterDepartureProps): React.JSX.Element {
+export default function LeftSlide(props: IDepartureProps): React.JSX.Element {
     return <>
         <motion.div
         initial={{x: -600}}
