@@ -1,14 +1,14 @@
 import React from "react";
 import Container from "../elements/Container";
 import {ISlideContainerProps} from "../../types/animated-container";
-import LeftSlide from "../animates/LeftSlide";
+import HorizontalSlide from "../animates/HorizontalSlide";
 
-export default function LeftSlideContainer(props: ISlideContainerProps): React.JSX.Element {
+export default function HorizontalSlideContainer(props: ISlideContainerProps): React.JSX.Element {
     return <>
         <Container className={props.className}>
-            <LeftSlide>
+            <HorizontalSlide power={props.power}>
                 {props.children}
-            </LeftSlide>
+            </HorizontalSlide>
         </Container>
     </>
 }

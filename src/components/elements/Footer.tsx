@@ -38,7 +38,7 @@ export default function Footer(): React.JSX.Element {
                 </Container>
             </Container>
             <Container>
-                <Text className={'prose text-xl'}>Copyright © {getCurrentDate()} - GOSSIPAUTHORXPM Apache 2.0 License</Text>
+                <Text className={'prose text-xl'}>Copyright © {getCurrentDate()} - GOSSIPAUTHORXPM MIT License</Text>
             </Container>
         </footer>
     </>

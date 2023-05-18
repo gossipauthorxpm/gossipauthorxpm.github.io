@@ -7,11 +7,11 @@ export default function Image(props: IImageProps): React.JSX.Element {
     const [isInverse, setIsInverse] = useState(store.getState().theme.isDarkTheme)
     store.subscribe(() => setIsInverse(store.getState().theme.isDarkTheme))
 
-    return <Container className={props.className}>
+    return <>
         <img style={isInverse && props.useNegative ? {filter: "invert(0.75)"} : {filter: "invert(0)"}}
              src={props.src}
              alt={props.alt}/>
-    </Container>
+    </>
 
 
 }

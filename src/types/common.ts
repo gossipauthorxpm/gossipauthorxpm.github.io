@@ -11,12 +11,11 @@ export type IHTextProps = {
 }
 export type ITextProps = {
     children: ReactNode
-    className: string
+    className?: string
 }
 export type IImageProps = {
     src?: any
     alt?: string
-    className: string
     useNegative: boolean
 }
 export type IFooterImageProps = {
