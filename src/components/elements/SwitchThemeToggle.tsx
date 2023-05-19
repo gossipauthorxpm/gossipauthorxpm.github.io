@@ -5,12 +5,15 @@ import {setDarkTheme, setLightTheme} from "../../redux/slices";
 export default function SwitchThemeToggle(): React.JSX.Element {
 
     const [check, setCheck] = useState(store.getState().theme.isDarkTheme)
+    const [data, setData] = useState(store.getState().language.data)
+
     store.subscribe(() => setCheck(store.getState().theme.isDarkTheme))
+    store.subscribe(() => setData(store.getState().language.data))
 
     return <div style={{display: "flex", textAlign: "center", alignItems: "center"}}>
         <input style={{margin: "10px"}} type="checkbox" className="toggle toggle-md"
                onClick={switchThemes} checked={check}/>
-        <span style={{userSelect: "none"}} className={'prose'}>Switch theme</span>
+        <span style={{userSelect: "none"}} className={'prose'}>{data.textSwitchTheme}</span>
     </div>
 
     function switchThemes() {

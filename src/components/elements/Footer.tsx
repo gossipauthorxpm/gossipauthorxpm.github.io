@@ -3,7 +3,7 @@ import GITHUB from "../../images/github-logo.png"
 import TELEGRAM from "../../images/telegram-logo.png"
 import REACT from "../../images/react-logo.png"
 import GITLAB from "../../images/gitlab-logo.png"
-import React from "react";
+import React, {useState} from "react";
 import FooterLogo from "./FooterLogo";
 import {INTERNET_LINKS} from "../../static/internet-links";
 import Link from "./Link";
@@ -11,21 +11,28 @@ import Container from "./Container";
 import {RoutesEndpoints} from "../../static/routes-endpoints";
 import SwitchThemeToggle from "./SwitchThemeToggle";
 import Text from "./Text";
+import SwitchLanguageToggle from "./SwitchLanguageToggle";
+import {store} from "../../redux/store";
 
 
 export default function Footer(): React.JSX.Element {
+    const [data, setData] = useState(store.getState().language.data)
+    store.subscribe(() => setData(store.getState().language.data))
 
     return <>
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <Container className="grid grid-flow-col gap-4">
                 <Link href={RoutesEndpoints.ROOT_PAGE} underlineClass={"use-underline"}
-                      className="link">About</Link>
+                      className="link">{data.links.about}</Link>
                 <Link href={RoutesEndpoints.STACK_PAGE} underlineClass={"use-underline"}
-                      className="link">Stack</Link>
+                      className="link">{data.links.stack}</Link>
                 <Link href={RoutesEndpoints.PRICE_PAGE} underlineClass={"use-underline"}
-                      className="link">Price</Link>
+                      className="link">{data.links.price}</Link>
             </Container>
-            <SwitchThemeToggle/>
+            <Container className={'flex justify-around flex-row'}>
+                <SwitchThemeToggle/>
+                <SwitchLanguageToggle/>
+            </Container>
             <Container>
                 <Container className="grid grid-flow-col gap-4">
                     <FooterLogo src={VK} href={INTERNET_LINKS.VK}/>
