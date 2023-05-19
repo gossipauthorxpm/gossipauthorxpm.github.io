@@ -1,4 +1,4 @@
-import {ILanguageDataState} from "../types/redux-types";
+import {IPagesDataState} from "../types/redux-types";
 
 export const ROOT_TEST_TEXT_1 = "Welcome to my personal website dedicated to programming!\n" +
     "Here, you will find a collection of resources, articles, and insights related to the fascinating world of programming. Whether you are a beginner looking to take your first steps into coding or an experienced developer seeking to expand your knowledge, this site aims to be a valuable source of information and inspiration.\n" +
@@ -8,7 +8,7 @@ export const ROOT_TEST_TEXT_1 = "Welcome to my personal website dedicated to pro
     "Thank you for visiting, and I hope you find this website informative, inspiring, and enjoyable!\n"
 export const ROOT_TEST_LIST = ["TESTLIST", "TESTLIST", "TESTLIST", "TESTLIST", "TESTLIST", "TESTLIST"]
 
-export const RU_DATA: ILanguageDataState = {
+export const RU_DATA: IPagesDataState = {
     testData: "Будучи страстным программистом, я считаю, что программирование — это не только технический навык, но и творческая отдушина, которая дает нам возможность воплощать идеи в жизнь. Через этот веб-сайт я стремлюсь поделиться своим опытом, знаниями и открытиями в различных языках программирования, фреймворках и технологиях.",
     textSwitchLanguage: "Сменить язык",
     textSwitchTheme: "Сменить тему",
@@ -18,7 +18,7 @@ export const RU_DATA: ILanguageDataState = {
         price: "Цены"
     }
 }
-export const EN_DATA: ILanguageDataState = {
+export const EN_DATA: IPagesDataState = {
     testData: "As a passionate programmer myself, I believe that programming is not just a technical skill, but also a creative outlet that empowers us to bring ideas to life. Through this website, I aim to share my experiences, expertise, and discoveries in various programming languages, frameworks, and technologies",
     textSwitchLanguage: "Change language",
     textSwitchTheme: "Change theme",

@@ -1,12 +1,13 @@
 export type IDarkThemeSliceState = {
     isDarkTheme: boolean
 }
+
 export type ILanguageSliceState = {
     isRussianLanguage: boolean
-    data: ILanguageDataState
+    data: IPagesDataState
 }
 
-export type ILanguageDataState = {
+export type IPagesDataState = {
     testData: string
     textSwitchLanguage: string
     textSwitchTheme: string
@@ -15,4 +16,9 @@ export type ILanguageDataState = {
         stack: string,
         price: string
     }
+}
+
+export type IReduxState = {
+    theme: IDarkThemeSliceState,
+    language: ILanguageSliceState
 }

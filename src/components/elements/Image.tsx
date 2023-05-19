@@ -1,13 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import {IImageProps} from "../../types/common";
-import {store} from "../../redux/store";
+import {useSelector} from "react-redux";
+import {IReduxState} from "../../types/redux-types";
 
 export default function Image(props: IImageProps): React.JSX.Element {
-    const [isInverse, setIsInverse] = useState(store.getState().theme.isDarkTheme)
-    store.subscribe(() => setIsInverse(store.getState().theme.isDarkTheme))
-
+    const isInverseSelector = useSelector((state: IReduxState) => state.theme.isDarkTheme)
     return <>
-        <img style={isInverse && props.useNegative ? {filter: "invert(0.75)"} : {filter: "invert(0)"}}
+        <img style={isInverseSelector && props.useNegative ? {filter: "invert(0.75)"} : {filter: "invert(0)"}}
              src={props.src}
              alt={props.alt}/>
     </>

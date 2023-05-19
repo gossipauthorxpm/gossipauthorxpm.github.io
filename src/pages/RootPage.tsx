@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "../styles/root-page.css"
 import Container from "../components/elements/Container";
 import HeaderText from "../components/elements/HeaderText";
@@ -8,14 +8,12 @@ import ImageComputer from "../images/ProgrammingIllustration.png"
 import {ROOT_TEST_TEXT_1} from "../static/static-text";
 import HorizontalSlide from "../components/animates/HorizontalSlide";
 import VerticalSlide from "../components/animates/VerticalSlide";
-import {store} from "../redux/store";
+import {useSelector} from "react-redux";
+import {IReduxState} from "../types/redux-types";
 
 
 export default function RootPage(): React.JSX.Element {
-
-    const [data, setData] = useState(store.getState().language.data)
-    store.subscribe(() => setData(store.getState().language.data))
-
+    const dataSelector = useSelector((state: IReduxState) => state.language.data)
     return <>
         <Container className={'flex flex-col'}>
             <HeaderText>
@@ -31,13 +29,13 @@ export default function RootPage(): React.JSX.Element {
             </Container>
             <Container className={'flex items-center flex-col justify-center'}>
                 <VerticalSlide className={'prose m-10 text-justify self-center'} power={100} view={true}>
-                    <Text>{data.testData}</Text>
+                    <Text>{dataSelector.testData}</Text>
                 </VerticalSlide>
                 <VerticalSlide className={'prose m-10 text-justify self-end'} power={100} view={true}>
-                    <Text>{data.testData}</Text>
+                    <Text>{dataSelector.testData}</Text>
                 </VerticalSlide>
                 <VerticalSlide className={'prose m-10 text-justify self-start'} power={100} view={true}>
-                    <Text>{data.testData}</Text>
+                    <Text>{dataSelector.testData}</Text>
                 </VerticalSlide>
             </Container>
         </Container>
