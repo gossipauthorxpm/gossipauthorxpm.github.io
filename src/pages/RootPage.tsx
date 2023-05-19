@@ -10,11 +10,12 @@ import HorizontalSlide from "../components/animates/HorizontalSlide";
 import VerticalSlide from "../components/animates/VerticalSlide";
 import {useSelector} from "react-redux";
 import {IReduxState} from "../types/redux-types";
+import ExitAnimate from "../components/animates/ExitAnimate";
 
 
 export default function RootPage(): React.JSX.Element {
     const dataSelector = useSelector((state: IReduxState) => state.language.data)
-    return <>
+    return <ExitAnimate key={'root-page'}>
         <Container className={'flex flex-col'}>
             <HeaderText>
                 Welcome to GOSSIPAUTHORXPM PROJECT
@@ -39,5 +40,5 @@ export default function RootPage(): React.JSX.Element {
                 </VerticalSlide>
             </Container>
         </Container>
-    </>
+    </ExitAnimate>
 }

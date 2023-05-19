@@ -6,13 +6,14 @@ import Text from "../components/elements/Text";
 import HorizontalSlideContainer from "../components/animated-elements/HorizontalSlideContainer";
 import {useSelector} from "react-redux";
 import {IReduxState} from "../types/redux-types";
+import ExitAnimate from "../components/animates/ExitAnimate";
 
 export default function StackPage(): React.JSX.Element {
     const list = [1, 2, 3, 4, 5]
 
     const dataSelector = useSelector((state: IReduxState) => state.language.data)
 
-    return <>
+    return <ExitAnimate key={'stack-page'}>
         <Container>
             <HeaderText>Stack</HeaderText>
             <Container className={'prose m-10 text-justify'}>
@@ -25,5 +26,5 @@ export default function StackPage(): React.JSX.Element {
                 <ULList>{list}</ULList>
             </HorizontalSlideContainer>
         </Container>
-    </>
+    </ExitAnimate>
 }

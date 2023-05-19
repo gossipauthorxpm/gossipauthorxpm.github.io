@@ -7,10 +7,11 @@ import ULList from "../components/elements/ULList";
 import HorizontalSlideContainer from "../components/animated-elements/HorizontalSlideContainer";
 import {useSelector} from "react-redux";
 import {IReduxState} from "../types/redux-types";
+import ExitAnimate from "../components/animates/ExitAnimate";
 
 export default function PricePage(): React.JSX.Element {
     const dataSelector = useSelector((state: IReduxState) => state.language.data)
-    return <>
+    return <ExitAnimate key={'price-page'}>
         <Container>
             <HeaderText>Price</HeaderText>
             <Container className={'prose m-10 text-justify'}>
@@ -20,5 +21,5 @@ export default function PricePage(): React.JSX.Element {
                 <ULList>{ROOT_TEST_LIST}</ULList>
             </HorizontalSlideContainer>
         </Container>
-    </>
+    </ExitAnimate>
 }

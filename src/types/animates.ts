@@ -4,5 +4,9 @@ export type ISlideProps = {
     children: ReactNode
     power: number
     view?: boolean
-    className? :string
+    className?: string
+}
+export type IExitAnimateProps = {
+    children: ReactNode
+    key: string
 }
