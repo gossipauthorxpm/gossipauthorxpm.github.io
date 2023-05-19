@@ -11,7 +11,7 @@ import ExitAnimate from "../components/animates/ExitAnimate";
 
 export default function PricePage(): React.JSX.Element {
     const dataSelector = useSelector((state: IReduxState) => state.language.data)
-    return <ExitAnimate key={'price-page'}>
+    return <ExitAnimate>
         <Container>
             <HeaderText>Price</HeaderText>
             <Container className={'prose m-10 text-justify'}>

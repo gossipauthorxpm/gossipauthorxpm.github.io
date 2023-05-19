@@ -20,10 +20,7 @@ export const {setDarkTheme, setLightTheme} = themeSlice.actions;
 // --------------------------------------------------------------
 export const languageSlice = createSlice({
     name: "language",
-    initialState: {
-        data: EN_DATA,
-        isRussianLanguage: false
-    } as ILanguageSliceState,
+    initialState: isRussianBrowser() as ILanguageSliceState,
     reducers: {
         setRussianLanguage: state => {
             state.data = RU_DATA
@@ -35,5 +32,18 @@ export const languageSlice = createSlice({
         }
     }
 })
+
+function isRussianBrowser(): ILanguageSliceState {
+    let lang = navigator.language
+    if (lang === "ru-RU") return {
+        isRussianLanguage: true,
+        data: RU_DATA
+    }
+    return {
+        isRussianLanguage: false,
+        data: EN_DATA
+    }
+}
+
 export const {setRussianLanguage, setEnglishLanguage} = languageSlice.actions
 // --------------------------------------------------------------

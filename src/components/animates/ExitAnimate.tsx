@@ -4,7 +4,7 @@ import {IExitAnimateProps} from "../../types/animates";
 
 export default function ExitAnimate(props: IExitAnimateProps): React.JSX.Element {
     return <motion.div
-        key={props.key}
+        key='exit'
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 0.3}}

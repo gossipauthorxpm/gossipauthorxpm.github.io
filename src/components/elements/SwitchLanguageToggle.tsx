@@ -9,7 +9,7 @@ export default function SwitchLanguageToggle(): React.JSX.Element {
 
     return <div style={{display: "flex", textAlign: "center", alignItems: "center"}}>
         <input style={{margin: "10px"}} type="checkbox" className="toggle toggle-md toggle-secondary"
-               onClick={switchLanguage} defaultChecked={languageSelector.isRussianLanguage}/>
+               onClick={switchLanguage} checked={languageSelector.isRussianLanguage} readOnly={true}/>
         <span style={{userSelect: "none"}} className={'prose'}>{languageSelector.data.textSwitchLanguage}
         </span>
     </div>

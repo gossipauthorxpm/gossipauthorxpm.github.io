@@ -13,7 +13,7 @@ export default function StackPage(): React.JSX.Element {
 
     const dataSelector = useSelector((state: IReduxState) => state.language.data)
 
-    return <ExitAnimate key={'stack-page'}>
+    return <ExitAnimate>
         <Container>
             <HeaderText>Stack</HeaderText>
             <Container className={'prose m-10 text-justify'}>

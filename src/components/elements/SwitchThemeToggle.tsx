@@ -8,7 +8,7 @@ export default function SwitchThemeToggle(): React.JSX.Element {
     const selector = useSelector((state: IReduxState) => state)
     return <div style={{display: "flex", textAlign: "center", alignItems: "center"}}>
         <input style={{margin: "10px"}} type="checkbox" className="toggle toggle-md"
-               onClick={switchThemes} checked={selector.theme.isDarkTheme}/>
+               onClick={switchThemes} checked={selector.theme.isDarkTheme} readOnly={true}/>
         <span style={{userSelect: "none"}} className={'prose'}>{selector.language.data.textSwitchTheme}</span>
     </div>
 

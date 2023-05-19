@@ -6,6 +6,7 @@ import Footer from "./components/elements/Footer";
 
 function App(): React.JSX.Element {
     return <>
+
         <Header/>
         <RoutesHandler/>
         <Footer/>

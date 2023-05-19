@@ -8,5 +8,4 @@ export type ISlideProps = {
 }
 export type IExitAnimateProps = {
     children: ReactNode
-    key: string
 }
