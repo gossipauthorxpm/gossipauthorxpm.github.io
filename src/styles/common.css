@@ -11,6 +11,10 @@
     border-color: #8a8a8a;
 }
 
+img {
+    border-radius: 25px;
+}
+
 #root {
     display: flex;
     flex-direction: column;

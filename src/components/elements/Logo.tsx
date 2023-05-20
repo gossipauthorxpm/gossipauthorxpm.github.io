@@ -1,5 +1,5 @@
 import Link from "./Link";
-import {ILogoProps} from "../../types/types-header";
+import {ILogoProps} from "../../@types/types-header";
 import {RoutesEndpoints} from "../../static/routes-endpoints";
 import React from "react";
 

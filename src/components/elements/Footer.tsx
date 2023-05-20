@@ -13,7 +13,7 @@ import SwitchThemeToggle from "./SwitchThemeToggle";
 import Text from "./Text";
 import SwitchLanguageToggle from "./SwitchLanguageToggle";
 import {useSelector} from "react-redux";
-import {IReduxState} from "../../types/redux-types";
+import {IReduxState} from "../../@types/redux-types";
 
 
 export default function Footer(): React.JSX.Element {

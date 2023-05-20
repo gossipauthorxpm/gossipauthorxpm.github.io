@@ -9,3 +9,6 @@ export type ISlideProps = {
 export type IExitAnimateProps = {
     children: ReactNode
 }
+export type ISelectWithBorderProps = {
+    children: ReactNode
+}

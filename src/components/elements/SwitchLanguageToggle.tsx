@@ -2,7 +2,7 @@ import React from "react";
 import {store} from "../../redux/store";
 import {setEnglishLanguage, setRussianLanguage} from "../../redux/slices";
 import {useSelector} from "react-redux";
-import {IReduxState} from "../../types/redux-types";
+import {IReduxState} from "../../@types/redux-types";
 
 export default function SwitchLanguageToggle(): React.JSX.Element {
     const languageSelector = useSelector((state: IReduxState) => state.language)

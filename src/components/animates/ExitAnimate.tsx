@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {IExitAnimateProps} from "../../types/animates";
+import {IExitAnimateProps} from "../../@types/animates";
 
 export default function ExitAnimate(props: IExitAnimateProps): React.JSX.Element {
     return <motion.div

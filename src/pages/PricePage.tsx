@@ -6,7 +6,7 @@ import {ROOT_TEST_LIST} from "../static/static-text";
 import ULList from "../components/elements/ULList";
 import HorizontalSlideContainer from "../components/animated-elements/HorizontalSlideContainer";
 import {useSelector} from "react-redux";
-import {IReduxState} from "../types/redux-types";
+import {IReduxState} from "../@types/redux-types";
 import ExitAnimate from "../components/animates/ExitAnimate";
 
 export default function PricePage(): React.JSX.Element {

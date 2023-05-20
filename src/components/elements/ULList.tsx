@@ -1,5 +1,5 @@
 import React from "react";
-import {IULListProps} from "../../types/common";
+import {IULListProps} from "../../@types/common";
 
 export default function ULList(props: IULListProps): React.JSX.Element {
     return <>

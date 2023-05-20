@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
 import React from "react";
-import {ISlideProps} from "../../types/animates";
+import {ISlideProps} from "../../@types/animates";
 
 export default function VerticalSlide(props: ISlideProps): React.JSX.Element {
     if (props.view) {

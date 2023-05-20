@@ -1,6 +1,6 @@
 import React from "react";
 import {motion} from "framer-motion";
-import {ISlideProps} from "../../types/animates";
+import {ISlideProps} from "../../@types/animates";
 
 export default function HorizontalSlide(props: ISlideProps): React.JSX.Element {
     if (props.view) {

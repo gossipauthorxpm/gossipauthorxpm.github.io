@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "./Link";
 import Image from "./Image";
-import {IFooterImageProps} from "../../types/common";
+import {IFooterImageProps} from "../../@types/common";
 import {motion} from "framer-motion";
 import Container from "./Container";
 

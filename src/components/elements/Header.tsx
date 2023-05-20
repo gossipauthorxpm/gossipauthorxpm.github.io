@@ -7,7 +7,7 @@ import SwitchThemeToggle from "./SwitchThemeToggle";
 import {RoutesEndpoints} from "../../static/routes-endpoints";
 import Container from "./Container";
 import {useSelector} from "react-redux";
-import {IReduxState} from "../../types/redux-types";
+import {IReduxState} from "../../@types/redux-types";
 
 
 export default function Header(): React.JSX.Element {

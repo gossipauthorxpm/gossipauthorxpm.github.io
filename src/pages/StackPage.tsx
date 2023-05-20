@@ -5,7 +5,7 @@ import ULList from "../components/elements/ULList";
 import Text from "../components/elements/Text";
 import HorizontalSlideContainer from "../components/animated-elements/HorizontalSlideContainer";
 import {useSelector} from "react-redux";
-import {IReduxState} from "../types/redux-types";
+import {IReduxState} from "../@types/redux-types";
 import ExitAnimate from "../components/animates/ExitAnimate";
 
 export default function StackPage(): React.JSX.Element {

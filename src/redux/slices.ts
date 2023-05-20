@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {IDarkThemeSliceState, ILanguageSliceState} from "../types/redux-types";
+import {IDarkThemeSliceState, ILanguageSliceState} from "../@types/redux-types";
 import {EN_DATA, RU_DATA} from "../static/static-text";
 // --------------------------------------------------------------
 export const themeSlice = createSlice({

@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../elements/Container";
-import {ISlideContainerProps} from "../../types/animated-container";
+import {ISlideContainerProps} from "../../@types/animated-container";
 import VerticalSlide from "../animates/VerticalSlide";
 
 export default function VerticalSlideContainer(props: ISlideContainerProps): React.JSX.Element {

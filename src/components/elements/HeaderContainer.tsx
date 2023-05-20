@@ -1,5 +1,5 @@
 import React from "react";
-import {IHeaderContainerProps} from "../../types/types-header";
+import {IHeaderContainerProps} from "../../@types/types-header";
 import Container from "./Container";
 import Delimiter from "./Delimiter";
 
