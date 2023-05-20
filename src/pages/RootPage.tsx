@@ -10,7 +10,7 @@ import VerticalSlide from "../components/animates/VerticalSlide";
 import {useSelector} from "react-redux";
 import {IReduxState} from "../@types/redux-types";
 import ExitAnimate from "../components/animates/ExitAnimate";
-import SelectWithBorder from "../components/animates/SelectWithBorder";
+import SelectWithOutLight from "../components/animates/SelectWithOutLight";
 
 
 export default function RootPage(): React.JSX.Element {
@@ -22,19 +22,19 @@ export default function RootPage(): React.JSX.Element {
             </HeaderText>
             <Container className={'flex items-center flex-col xl:flex-row'}>
                 <HorizontalSlide className={'m-10'} power={-2000}>
-                    <SelectWithBorder>
+                    <SelectWithOutLight>
                         <Image useNegative={true} src={ImageComputer} alt={'Image'}/>
-                    </SelectWithBorder>
+                    </SelectWithOutLight>
                 </HorizontalSlide>
                 <VerticalSlide className={'prose m-10 text-justify'} power={200}>
                     <Text>{dataSelector.rootPage.text1}</Text>
                 </VerticalSlide>
             </Container>
             <Container className={'flex items-center flex-col justify-center'}>
-                <VerticalSlide className={'prose m-10 text-justify self-center'} power={100} view={true}>
+                <VerticalSlide className={'prose max-w-none w-10/12 m-10 text-justify'} power={100} view={true}>
                     <Text>{dataSelector.rootPage.text2}</Text>
                 </VerticalSlide>
-                <VerticalSlide className={'prose m-10 text-justify self-end'} power={100} view={true}>
+                <VerticalSlide className={'prose max-w-none w-10/12 m-10 text-justify'} power={100} view={true}>
                     <Text>{dataSelector.rootPage.text3}</Text>
                 </VerticalSlide>
             </Container>

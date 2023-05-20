@@ -15,6 +15,10 @@ img {
     border-radius: 25px;
 }
 
+canvas {
+    display: block;
+}
+
 #root {
     display: flex;
     flex-direction: column;
