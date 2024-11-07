@@ -20,6 +20,10 @@ export type IPagesDataState = {
         text1: string
         text2: string
         text3: string
+    },
+    stackPage: {
+        list: string[],
+        rootText: string
     }
 }
 

@@ -17,13 +17,10 @@ export default function StackPage(): React.JSX.Element {
         <Container>
             <HeaderText>Stack</HeaderText>
             <Container className={'prose m-10 text-justify'}>
-                <Text>{dataSelector.testData}</Text>
+                <Text>{dataSelector.stackPage.rootText}</Text>
             </Container>
             <HorizontalSlideContainer power={-2000} className={'flex justify-center m-10'}>
-                <ULList>{list}</ULList>
-            </HorizontalSlideContainer>
-            <HorizontalSlideContainer power={2000} className={'flex justify-center m-10'}>
-                <ULList>{list}</ULList>
+                <ULList>{dataSelector.stackPage.list}</ULList>
             </HorizontalSlideContainer>
         </Container>
     </ExitAnimate>

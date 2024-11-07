@@ -32,6 +32,10 @@ export const RU_DATA: IPagesDataState = {
             "Наша цель - обеспечить вам не только эффективное ценообразование, но и результат, который превзойдет ваши ожидания по качеству. Мы гордимся нашими достижениями и стремимся к полной удовлетворенности клиентов.\n" +
             "Если вы ищете надежного партнера, который предложит эффективное ценообразование и обеспечит качественный результат, обратитесь к нам. Мы готовы принять вызов и создать для вас решение, которое превзойдет ваши ожидания.",
 
+    },
+    stackPage: {
+        list: ["Java Spring", "Php Symfony", "TS React", "Python3", "NodeJS"],
+        rootText: "Опыт можете найти в резюме!"
     }
 }
 export const EN_DATA: IPagesDataState = {
@@ -65,5 +69,9 @@ export const EN_DATA: IPagesDataState = {
             "Our goal is to provide you with not only efficient pricing but also results that surpass your quality expectations. We take pride in our achievements and strive for complete customer satisfaction.\n" +
             "If you are seeking a reliable partner who offers efficient pricing and delivers high-quality results, turn to us. We are ready to take on the challenge and create a solution that exceeds your expectations.",
 
+    },
+    stackPage: {
+        list: ["Java Spring", "Php Symfony", "TS React", "Python3", "NodeJS"],
+        rootText: "You can find your experience on your resume.!"
     }
 }
